@@ -1,0 +1,115 @@
+
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+   background-image: url(./assets/images/1.png);
+  background-size: cover;
+  background-position: center; 
+
+}
+
+
+ p {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 70px;
+  color: blue;
+  text-shadow: 2px 2px 10px rgb(78, 170, 35);
+} 
+
+ .header {
+text-align: center;
+background-image: url(./assets/wallpaper.jpg);
+background-repeat: repeat;
+background-position: bottom;
+
+} 
+
+ .bg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150%;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+} 
+
+ .piano-image {
+    top: -34px;
+    left: -35px;
+ 
+}
+
+.piano-arrange {
+  position: relative;
+  margin-top: -42px;
+  
+} 
+
+h6 {
+  visibility: hidden;
+}
+
+.piano {
+    display: flex;
+    z-index: 9;
+    margin-top: -47px;
+    margin-right: -3px;
+}
+
+.key {
+  height: calc(var(--width) * 3);
+  width: var(--width);
+  text-align: center;
+}
+
+ .key h2 {
+  padding-top: 25px;
+  font-family: 'Acme', sans-serif;
+  font-size: 15px;
+}
+
+.black h2 {
+  color: aliceblue;
+  padding-top: 10px;
+}
+
+.white h2 {
+  padding-top: 40px;
+} 
+
+.white {
+  --width: 24px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: rgb(80, 0, 185);
+}
+
+.black.active {
+  background-color: rgb(224, 240, 6);
+}
+
+.black {
+  --width: 14px;
+  background-color: black;
+  border: 1px solid #333;
+  margin-left: calc(var(--width) / -2) ;
+  margin-right: calc(var(--width) / -2)  ;
+  z-index: 40;
+}
+
+ #carouselExampleIndicators {
+  max-width: 650px;
+  margin-top: 60px;
+}
+
+iframe {
+  width: 650px;
+  height: 450px;
+} 
